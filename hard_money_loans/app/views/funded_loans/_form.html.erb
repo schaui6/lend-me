@@ -1,0 +1,57 @@
+<%= form_for(funded_loan) do |f| %>
+  <% if funded_loan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(funded_loan.errors.count, "error") %> prohibited this funded_loan from being saved:</h2>
+
+      <ul>
+      <% funded_loan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title.string %>
+    <%= f.text_field :title.string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :loan_amount.string %>
+    <%= f.text_field :loan_amount.string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :purpose.string %>
+    <%= f.text_field :purpose.string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :loan_position.string %>
+    <%= f.text_field :loan_position.string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :term.string %>
+    <%= f.text_field :term.string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :property_type.text %>
+    <%= f.text_field :property_type.text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :term.string %>
+    <%= f.text_field :term.string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :loan_to_cost.string %>
+    <%= f.text_field :loan_to_cost.string %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

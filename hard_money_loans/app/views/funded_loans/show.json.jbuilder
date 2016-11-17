@@ -1,0 +1,1 @@
+json.partial! "funded_loans/funded_loan", funded_loan: @funded_loan

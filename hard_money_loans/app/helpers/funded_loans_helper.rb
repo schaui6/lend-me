@@ -1,0 +1,2 @@
+module FundedLoansHelper
+end

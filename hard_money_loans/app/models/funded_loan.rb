@@ -1,0 +1,2 @@
+class FundedLoan < ApplicationRecord
+end
