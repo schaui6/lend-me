@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title.string:</strong>
+  <%= @funded_loan.title.string %>
+</p>
+
+<p>
+  <strong>Loan amount.string:</strong>
+  <%= @funded_loan.loan_amount.string %>
+</p>
+
+<p>
+  <strong>Purpose.string:</strong>
+  <%= @funded_loan.purpose.string %>
+</p>
+
+<p>
+  <strong>Loan position.string:</strong>
+  <%= @funded_loan.loan_position.string %>
+</p>
+
+<p>
+  <strong>Term.string:</strong>
+  <%= @funded_loan.term.string %>
+</p>
+
+<p>
+  <strong>Property type.text:</strong>
+  <%= @funded_loan.property_type.text %>
+</p>
+
+<p>
+  <strong>Term.string:</strong>
+  <%= @funded_loan.term.string %>
+</p>
+
+<p>
+  <strong>Loan to cost.string:</strong>
+  <%= @funded_loan.loan_to_cost.string %>
+</p>
+
+<%= link_to 'Edit', edit_funded_loan_path(@funded_loan) %> |
+<%= link_to 'Back', funded_loans_path %>
