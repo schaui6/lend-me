@@ -1,1 +1,0 @@
-json.array! @funded_loans, partial: 'funded_loans/funded_loan', as: :funded_loan
